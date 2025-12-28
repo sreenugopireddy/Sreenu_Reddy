@@ -48,7 +48,7 @@ const Footer = () => {
 
           <div className="text-center md:text-right">
             <p className="text-muted-foreground text-sm flex items-center gap-1">
-              © 2024 Sreenu Gopireddy. Made with <Heart className="h-4 w-4 text-primary" />
+              © 2026 Sreenu Gopireddy. Made with <Heart className="h-4 w-4 text-primary" />
             </p>
           </div>
         </div>

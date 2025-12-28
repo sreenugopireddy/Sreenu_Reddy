@@ -8,43 +8,37 @@ const certifications = [
     title: "AWS Solutions Architecture",
     issuer: "Forage",
     icon: Cloud,
-    link: "#", // Add your drive link here
+    link: "https://drive.google.com/file/d/1e2JRS1VVhj5Co9ORgC2TyxUviaXljZJc/view?usp=sharing", // Add your drive link here
   },
   {
     title: "Data Visualization",
     issuer: "Tata",
     icon: BarChart2,
-    link: "#", // Add your drive link here
+    link: "https://drive.google.com/file/d/1V3MrdomO-mYq0IqzdUD9ym2Dt3uKMGqx/view?usp=sharing", // Add your drive link here
   },
   {
     title: "SQL for Data Science",
     issuer: "UC Davis",
     icon: Database,
-    link: "#", // Add your drive link here
-  },
-  {
-    title: "Power BI",
-    issuer: "Microsoft",
-    icon: FileSpreadsheet,
-    link: "#", // Add your drive link here
+    link: "https://drive.google.com/file/d/1A8kwTT6N_d2jsrfvpShlDQ5bKKEkKC6b/view?usp=sharing", // Add your drive link here
   },
   {
     title: "ETL in Power BI",
     issuer: "Microsoft (Coursera)",
     icon: Database,
-    link: "#", // Add your drive link here
+    link: "https://drive.google.com/file/d/1S-LntOyxZsCb1KdU_ZF-nltyUAn0IwtP/view?usp=sharing", // Add your drive link here
   },
   {
     title: "Data Analysis & Visualization",
     issuer: "Microsoft (Coursera)",
     icon: BarChart2,
-    link: "#", // Add your drive link here
+    link: "https://drive.google.com/file/d/1KLTFwHWGwSRupCteM4rRi4-CfgRtnKa_/view?usp=sharing", // Add your drive link here
   },
   {
     title: "Harnessing Power of Data",
     issuer: "Microsoft (Coursera)",
     icon: FileSpreadsheet,
-    link: "#", // Add your drive link here
+    link: "https://drive.google.com/file/d/1M8dep_W2fT8pmPH2nMXBfL_LbGJ43XR5/view?usp=sharing", // Add your drive link here
   },
 ];
 

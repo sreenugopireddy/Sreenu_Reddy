@@ -16,7 +16,10 @@ const HeroSection = () => {
       {/* Background gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[128px] animate-pulse-glow" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/20 rounded-full blur-[128px] animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
+        <div
+          className="absolute bottom-1/4 -right-32 w-96 h-96 bg-accent/20 rounded-full blur-[128px] animate-pulse-glow"
+          style={{ animationDelay: "1.5s" }}
+        />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-primary/10 to-accent/10 rounded-full blur-[100px]" />
       </div>
 
@@ -28,10 +31,13 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1 + icon.delay, duration: 0.5 }}
-            className={`absolute glass px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground animate-float`}
+            className="absolute glass px-4 py-2 rounded-lg text-sm font-medium text-muted-foreground animate-float"
             style={{
               top: `${20 + (index * 15) % 60}%`,
-              left: index % 2 === 0 ? `${5 + index * 3}%` : `${75 + index * 3}%`,
+              left:
+                index % 2 === 0
+                  ? `${5 + index * 3}%`
+                  : `${75 + index * 3}%`,
               animationDelay: `${icon.delay}s`,
             }}
           >
@@ -58,7 +64,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
         >
-          Hi, I'm{" "}
+          Hi, I&apos;m{" "}
           <span className="gradient-text">Sreenu Gopireddy</span>
         </motion.h1>
 
@@ -68,9 +74,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          I build intelligent systems, uncover insights from data, and create ML-driven solutions that solve real problems.
+          I build intelligent systems, uncover insights from data, and create
+          ML-driven solutions that solve real problems.
         </motion.p>
 
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -80,20 +88,29 @@ const HeroSection = () => {
           <Button
             size="lg"
             className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 transition-opacity px-8 py-6 text-base font-semibold"
-            onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() =>
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
           >
             View Projects
           </Button>
+
           <Button
+            asChild
             size="lg"
             variant="outline"
             className="border-border hover:bg-secondary/50 px-8 py-6 text-base font-semibold"
           >
-            <Download className="mr-2 h-5 w-5" />
-            Download Resume
+            <a href="/Sreenu_Gopiredddy.pdf" download>
+              <Download className="mr-2 h-5 w-5" />
+              Download Resume
+            </a>
           </Button>
         </motion.div>
 
+        {/* Social links */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -108,6 +125,7 @@ const HeroSection = () => {
           >
             <Github className="h-5 w-5" />
           </a>
+
           <a
             href="https://www.linkedin.com/in/sreenu-gopireddy/"
             target="_blank"
@@ -116,14 +134,16 @@ const HeroSection = () => {
           >
             <Linkedin className="h-5 w-5" />
           </a>
+
           <a
-            href="https://learn.microsoft.com/en-in/users/sreenugopireddy-1886"
+            href="https://learn.microsoft.com/en-in/users/sreenu-gopireddy-1886"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 glass rounded-full hover:bg-secondary/50 transition-colors hover-glow"
           >
             <Cloud className="h-5 w-5" />
           </a>
+
           <a
             href="https://leetcode.com/u/sreenu_24/"
             target="_blank"
@@ -134,6 +154,7 @@ const HeroSection = () => {
           </a>
         </motion.div>
 
+        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

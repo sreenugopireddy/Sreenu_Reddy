@@ -7,7 +7,7 @@ const experiences = [
   {
     company: "Ariadi Technologies",
     role: "Frontend Developer",
-    period: "2024",
+    period: "Noc/2025 - Present",
     description: [
       "Built responsive and performant web applications",
       "Developed user interfaces with modern frontend frameworks",
@@ -17,7 +17,7 @@ const experiences = [
   {
     company: "Tata (Forage)",
     role: "AI & Data Analytics Intern",
-    period: "2024",
+    period: "oct/2025 - Nov/2025",
     description: [
       "Performed EDA on real-world datasets",
       "Generated actionable business insights",
